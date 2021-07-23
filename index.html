@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="searchbar.css">
+    <link rel="icon" href="media/logo.png" type="image/icon type">
+    <title>Search</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+  </head>
+  <body class="background">
+<div>
+
+<div onclick="hideallfunction()" id="hideall"></div>
+
+<div class="searchsection">
+    <div role="search" class="search">
+    <input tabindex="0" class="searchbar" type="search" aria-label="Search text" name="search">
+    <button class="searchbutton" aria-label="Cancel"><img src="media/close/round_close_black_24dp.png" alt="cancel" class="closeimg globalsearchremove"></button>
+    <button class="searchbutton" aria-label="Search"><img src="media/search/round_search_black_24dp.png" alt="search" class="searchimg"></button>  
+  </div>
+    <div class="middle">
+    <div class="borderbetween globalsearchremove"></div>
+    </div>
+    <div class="middle">
+  <ul tabindex="2" class="list globalsearchremove">
+    <li class="section" role="option">Content 1</li>
+    <li class="section" role="option">Content 2</li>
+    <li class="section" role="option">Content 3</li>
+    <li class="section" role="option">Content 4</li>
+    <li class="section" role="option">Content 5</li>
+    <li class="section" role="option">Content 6</li>
+    <li class="noresult">No Result</li>
+  </ul>
+  </div>
+  </div>
+</div>
+
+    <script src="javascript/global.js" defer></script>
+
+  </body>
+</html>
