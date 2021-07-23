@@ -71,12 +71,12 @@ div.middle {
        }
 
     .searchbar:focus {
-        background-color: rgb(224, 212, 212);
+        background-color: #edf2fb;
         cursor: text;
     }
 
     .searchbar:hover {
-        background-color: rgb(224, 212, 212);
+        background-color: #edf2fb;
     }
 
     .searchimg {
@@ -90,7 +90,7 @@ div.middle {
     }
 
     .searchimg:hover {
-        background-color: rgb(224, 212, 212);
+        background-color: #edf2fb;
     }
 
      .closeimg {
@@ -105,11 +105,11 @@ div.middle {
     }
 
     .closeimg:focus {
-        background-color: rgb(224, 212, 212);
+        background-color: #edf2fb;
     }
 
     .closeimg:hover {
-        background-color: rgb(224, 212, 212);
+        background-color: #edf2fb;
     }
    
    .list {
