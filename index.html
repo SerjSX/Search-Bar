@@ -16,15 +16,15 @@
 
 <div class="searchsection">
     <div role="search" class="search">
-    <input tabindex="0" class="searchbar" type="search" aria-label="Search text" name="search">
-    <button class="searchbutton" aria-label="Cancel"><img src="media/close/round_close_black_24dp.png" alt="cancel" class="closeimg globalsearchremove"></button>
-    <button class="searchbutton" aria-label="Search"><img src="media/search/round_search_black_24dp.png" alt="search" class="searchimg"></button>  
+    <input tabindex="1" class="searchbar" type="search" aria-label="Search text" placeholder="Search..." name="search">
+    <button tabindex="-1" class="searchbutton" id="close-img-js" aria-label="Cancel"><img src="media/close/round_close_black_24dp.png" alt="cancel" class="closeimg globalsearchremove" class="searchbutton" id="close-img-js" aria-label="Cancel"></button>
+    <button tabindex="2" class="searchbutton" id="search-img-js" aria-label="Search"><img src="media/search/round_search_black_24dp.png" alt="search" class="searchimg"></button>  
   </div>
     <div class="middle">
     <div class="borderbetween globalsearchremove"></div>
     </div>
     <div class="middle">
-  <ul tabindex="2" class="list globalsearchremove">
+  <ul tabindex="3" class="list globalsearchremove">
     <li class="section" role="option">Content 1</li>
     <li class="section" role="option">Content 2</li>
     <li class="section" role="option">Content 3</li>

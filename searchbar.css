@@ -44,7 +44,7 @@ div.middle {
     border: 1px solid lightgray;
     border-radius: 10px;
     display: flex;
-    width: 250px;
+    width: 300px;
     flex-direction: column;
 }
 
@@ -58,7 +58,7 @@ div.middle {
 
     .searchbar {
         font-size: 10px;
-        padding: 10px;
+        padding: 8px;
         border: none;
         width: 550px;
         margin-left: 10px;
@@ -81,7 +81,6 @@ div.middle {
 
     .searchimg {
         border-radius: 30px;
-        height: 20px;
         padding: 5px;
         margin-top: 5px;
         margin-bottom: 2px;
@@ -96,10 +95,10 @@ div.middle {
      .closeimg {
         display: none;
         outline: none;
-        height: 20px;
         padding: 5px;
         margin-top: 5px;
         margin-bottom: 2px;
+        margin-left: 8px;
         border-radius: 30px;
         cursor: pointer;
     }
@@ -125,6 +124,10 @@ div.middle {
        list-style-type: none;
        color: rgb(255, 255, 255);
    }
+
+   .list:focus {
+    background-color: #edf2fb;
+}
 
    .borderbetween {
     display: none;
@@ -227,12 +230,8 @@ div.middle {
      
     /* XXX Large screens (2560px and up) */
     @media only screen and (min-width: 2560px) {
-        .searchbar {
-            font-size: 18px;
-        }
 
        .list {
-          font-size: 18px;
           max-height: 240px;
         }
     }

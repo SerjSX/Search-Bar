@@ -2,21 +2,24 @@ document.querySelector('.searchbar').value = "";
 
 const list = document.querySelector('.list');
 
-const searchimg = document.querySelector('.searchimg'); 
+const searchimg = document.getElementById("search-img-js"); 
 searchimg.addEventListener('click', searchshow);
+searchimg.addEventListener('keyup', enterkeyShow);
 
 const searchbar = document.querySelector('.searchbar'); 
 searchbar.addEventListener('keyup', search);
 
-const closeimg = document.querySelector('.closeimg'); 
+const closeimg = document.getElementById("close-img-js"); 
 closeimg.addEventListener('click', closeimgfunction);
+closeimg.addEventListener('keyup', enterkeyClose);
 
 // Hide All function when you click anywhere on the background
 function hideallfunction(){
     document.querySelectorAll('.globalsearchremove').forEach(el => el.classList.remove('show'))
     document.querySelectorAll('.globalsearchremove').forEach(el => el.classList.add('hide'))
     document.querySelector('.searchbar').value = "";
-    document.querySelector('.searchbar').removeAttribute("placeholder");
+    document.querySelector('.searchbar').setAttribute("placeholder", "Search...");
+    document.getElementById('close-img-js').setAttribute("tabindex", "-1");
     window.setTimeout(hideallfunction2, 500);
 }
 
@@ -34,7 +37,8 @@ if (input !== "") {
     document.querySelector('.list').classList.add('add');
     document.querySelector('.closeimg').classList.add('add');
     document.querySelector('.borderbetween').classList.add('add');
-    document.querySelector('.searchbar').removeAttribute("placeholder");
+    document.querySelector('.searchbar').setAttribute("placeholder", "Search...");
+    document.getElementById('close-img-js').setAttribute("tabindex", "4");
     window.setTimeout(searchshow2, 100);
 } else {
     document.querySelector('.searchbar').focus();
@@ -83,7 +87,7 @@ searchbar.addEventListener("keyup", function(event) {
     } else if (event.keyCode === 27) {
         event.preventDefault();
         closeimgfunction();
-        document.querySelector('.searchbar').removeAttribute("placeholder");
+        document.querySelector('.searchbar').setAttribute("placeholder", "Search...");
     }
   }); 
 
@@ -99,6 +103,7 @@ function closeimgfunction() {
     document.querySelectorAll('.globalsearchremove').forEach(el => el.classList.remove('show'))
     document.querySelectorAll('.globalsearchremove').forEach(el => el.classList.add('hide'))
     document.querySelector('.searchbar').value = "";
+    document.getElementById('close-img-js').setAttribute("tabindex", "-1");
     window.setTimeout(closeimgfunction2, 500);
 }
 
@@ -106,3 +111,25 @@ function closeimgfunction2() {
     document.querySelectorAll('.globalsearchremove').forEach(el => el.classList.remove('add'))
     document.querySelectorAll('.globalsearchremove').forEach(el => el.classList.add('remove'))
 }
+
+//keyboard functions
+function enterkeyShow(event) {
+    if (event.keyCode === 13) {
+        searchshow();
+    }
+}
+
+function enterkeyClose(event) {
+    if (event.keyCode === 13) {
+        closeimgfunction();
+        document.querySelector('.searchbar').setAttribute("placeholder", "Search...");
+    }
+}
+
+function esckey(event) {
+    if (event.keyCode === 27) {
+        closeimgfunction();
+        document.querySelector('.searchbar').setAttribute("placeholder", "Search...");
+}
+}
+
