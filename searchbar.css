@@ -67,6 +67,7 @@ div.middle {
         outline: none;
         border-radius: 30px;
         color: black;
+        font-family: 'Roboto', sans-serif;
         cursor: pointer;
        }
 
@@ -145,6 +146,7 @@ div.middle {
        text-align: center;
        cursor: pointer;
        color: black;
+       font-family: 'Roboto', sans-serif;
    }
 
    .section:hover {
@@ -161,6 +163,7 @@ div.middle {
        text-align: center;
        cursor: default;
        border-radius: 10px;
+       font-family: 'Roboto', sans-serif;
    }
    
     }
