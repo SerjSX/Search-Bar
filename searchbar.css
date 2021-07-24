@@ -42,7 +42,7 @@ div.middle {
 .searchsection {
     position: relative;
     border: 1px solid lightgray;
-    border-radius: 10px;
+    border-radius: 20px;
     display: flex;
     width: 300px;
     flex-direction: column;
@@ -58,14 +58,14 @@ div.middle {
 
     .searchbar {
         font-size: 10px;
-        padding: 8px;
+        padding: 10px;
         border: none;
         width: 550px;
         margin-left: 10px;
         margin-top: 6px;
         margin-bottom: 6px;
         outline: none;
-        border-radius: 10px;
+        border-radius: 30px;
         color: black;
         cursor: pointer;
        }
@@ -187,11 +187,9 @@ div.middle {
 
        .searchimg {
            margin-right: 8px;
-           height: initial;
        }
 
        .closeimg {
-           height: initial;
            margin-left: 8px;
        }
     }
